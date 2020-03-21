@@ -1,0 +1,32 @@
+{
+  "name": "gae_deploy_action",
+  "version": "1.0.0",
+  "description": "Google App Engine (GAE) Deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm audit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atRobertoFlores/gae_deploy_action"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript",
+    "Google",
+    "App",
+    "Engine",
+    "GAE",
+    "Deploy"
+  ],
+  "author": "Roberto Flores",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atRobertoFlores/gae_deploy_action/issues"
+  },
+  "homepage": "https://github.com/atRobertoFlores/gae_deploy_action",
+  "dependencies": {
+    "@actions/core": "^1.1.1"
+  }
+}

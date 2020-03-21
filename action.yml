@@ -1,0 +1,19 @@
+name: 'Google App Engine (GAE) Deploy'
+description: 'Deploy application to Google App Engine (GAE)'
+author: 'Roberto Flores'
+inputs:
+  service_account:
+    description: 'Service Account JSON key'
+    required: true
+  project_name:
+    description: 'GAE project name'
+    required: true
+outputs:
+  time: # output will be available to future steps 
+    description: 'The message to output'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'hard-drive'
+  color: 'blue'
