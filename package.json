@@ -4,6 +4,7 @@
   "description": "Google App Engine (GAE) Deploy",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "npm audit"
   },
   "repository": {
