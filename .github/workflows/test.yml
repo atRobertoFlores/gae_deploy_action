@@ -23,5 +23,5 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ./
       with:
-        service_account: 'Service Account Value'
-        project_name: 'Project Name Value'
+        service_account: ${{ secrets.SERVICE_ACCOUNT }}
+        project_name: ${{ secrets.PROJECT_NAME }}
