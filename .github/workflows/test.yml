@@ -1,6 +1,7 @@
 name: "units-test"
 on:
-  [push]
+  push:
+    branches: [master]
   #pull_request:
   #push:
   #  branches:
