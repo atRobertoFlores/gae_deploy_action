@@ -8,8 +8,8 @@ inputs:
   project_name:
     description: 'GAE project name'
     required: true
-  no_deploy:
-    description: 'No Deploy, just connect for testing'
+  gae_info:
+    description: 'No Deploy, just get GAE info'
     required: false
 runs:
   using: 'node12'

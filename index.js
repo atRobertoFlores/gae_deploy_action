@@ -28,14 +28,14 @@ async function run() {
     core.startGroup('Set GCP Project');
     execSync(`gcloud config set project ${projectName}`, {stdio: 'inherit'});
     core.endGroup();
-    if(core.getInput('no_deploy')) {
-      core.startGroup('Depoy GCP project');
-      execSync(`gcloud app deploy`, {stdio: 'inherit'});
+    if(core.getInput('gae_info')) {
+      core.startGroup('GCP info');
+      execSync(`gcloud info`, {stdio: 'inherit'});
       core.endGroup();
     }
     else {
-      core.startGroup('GCP info');
-      execSync(`gcloud info`, {stdio: 'inherit'});
+      core.startGroup('Depoy GCP project');
+      execSync(`gcloud app deploy`, {stdio: 'inherit'});
       core.endGroup();
     }
     core.startGroup('Working with SERVICE_ACCOUNT');
