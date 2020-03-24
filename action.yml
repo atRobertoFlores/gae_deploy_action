@@ -8,9 +8,9 @@ inputs:
   project_name:
     description: 'GAE project name'
     required: true
-outputs:
-  time: # output will be available to future steps 
-    description: 'The message to output'
+  no_deploy:
+    description: 'No Deploy, just connect for testing'
+    required: false
 runs:
   using: 'node12'
   main: 'index.js'

@@ -25,3 +25,4 @@ jobs:
       with:
         service_account: ${{ secrets.SERVICE_ACCOUNT }}
         project_name: ${{ secrets.PROJECT_NAME }}
+        no_deploy: true
