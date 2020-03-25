@@ -7,6 +7,7 @@ async function run() {
   try {
     const serviceAccountFile = `/tmp/${(new Date()).getTime()}.json`;
     const projectName = core.getInput('project_name');
+    /*
     core.startGroup('Add Cloud SDK distribution URI as a package source');
     execSync(`echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list`, {stdio: 'inherit'});
     core.endGroup();
@@ -19,6 +20,7 @@ async function run() {
     core.startGroup('Update and install Google Cloud SDK');
     execSync(`sudo apt-get update && sudo apt-get install google-cloud-sdk -y`, {stdio: 'inherit'});
     core.endGroup();
+    */
     core.startGroup('Working with SERVICE_ACCOUNT');
     console.log('Copy SERVICE_ACCOUNT');
     fs.writeFileSync(serviceAccountFile, core.getInput('service_account'));
