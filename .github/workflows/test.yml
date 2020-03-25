@@ -1,4 +1,4 @@
-name: "units-test"
+name: "Continuous Deployment (CD) working"
 on:
   [push]
   #pull_request:
