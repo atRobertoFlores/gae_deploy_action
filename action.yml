@@ -8,7 +8,7 @@ inputs:
   project_name:
     description: 'GAE project name'
     required: true
-  gae_info:
+  test:
     description: 'No Deploy, just get GAE info'
     required: false
 runs:
