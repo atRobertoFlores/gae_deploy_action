@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/atRobertoFlores/gae_deploy_action",
   "dependencies": {
-    "@actions/core": "^1.1.1"
+    "@actions/core": "^1.9.1"
   }
 }
