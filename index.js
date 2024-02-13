@@ -24,7 +24,7 @@ async function run() {
       core.endGroup();
     }
     else {
-      core.startGroup('Depoy GAE project');
+      core.startGroup('Deploy GAE project');
       execSync(`gcloud app deploy`, {stdio: 'inherit'});
       core.endGroup();
     }
